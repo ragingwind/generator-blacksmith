@@ -19,7 +19,12 @@ Avaiable generators:
 Sets up a new blacksmith app, generating all the boilerplate you need to get started.
 
 ### Post
-Generate and create a new post files in `content/posts'
+Generate and create a new post files at `content/posts'
+
+Example:
+```bash
+yo blacksmith:post title authorname
+```
 
 ## Options
 
