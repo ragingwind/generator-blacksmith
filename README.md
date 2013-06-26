@@ -2,6 +2,9 @@
 
 Yeoman generator for [blacksmith]( http://goo.gl/kS0z3 ).
 
+
+![screenshot](https://github.com/ragingwind/generator-blacksmith/raw/master/doc/screenshot.png)
+
 ## Getting started
 - Make sure you have [yo](https://github.com/yeoman/yo) installed:
     `npm install -g yo`
