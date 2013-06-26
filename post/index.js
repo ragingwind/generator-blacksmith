@@ -26,7 +26,7 @@ var PostGenerator = module.exports = function PostGenerator(args, options, confi
 util.inherits(PostGenerator, yeoman.generators.NamedBase);
 
 PostGenerator.prototype.newPost = function newPost() {
-  var postpath = 'content/posts/' + this.metadata.title.replace(' ', '-').toLowerCase();
+  var postpath = 'content/posts/' + this.metadata.title.replace(/ /g, '-').toLowerCase();
   var date = new Date();
   this.metadata.createdate = [date.getFullYear(), date.getMonth(), date.getDate()].join('-')
     + ' ' + [date.getHours(), date.getMinutes(), date.getSeconds()].join(':');
