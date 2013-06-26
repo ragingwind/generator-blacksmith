@@ -1,0 +1,11 @@
+{
+  "name": "<%= metadata.authorname %>",
+  "email": "<%= metadata.email %>",
+  "github": "<%= metadata.github %>",
+  "twitter": "<%= metadata.twitter %>",
+  "github-url": "https://github.com/<%= metadata.github %>",
+  "twitter-url": "http://twitter.com/<%= metadata.twitter %>",
+  "gravatar-url": "http://www.gravatar.com/avatar/<%= metadata.gravatar %>?d=identicon",
+  "location": "<%= metadata.location%>",
+  "bio": "<%= metadata.bio %>"
+}

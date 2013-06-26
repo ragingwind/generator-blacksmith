@@ -1,0 +1,40 @@
+{
+  "name": "generator-blacksmith",
+  "version": "0.0.0",
+  "description": "Yeoman generator for blacksmith",
+  "keywords": [
+    "yeoman-generator",
+    "blacksmith",
+    "blog",
+    "blogging"
+  ],
+  "homepage": "https://github.com/ragingwind/generator-blacksmith",
+  "bugs": "https://github.com/ragingwind/generator-blacksmith/issues",
+  "author": {
+    "name": "Jimmy Moon",
+    "email": "ragingwind@gmail.com",
+    "url": "https://github.com/ragingwind"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ragingwind/generator-blacksmith.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.12.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.10.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}

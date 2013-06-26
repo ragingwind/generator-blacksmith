@@ -1,0 +1,267 @@
+/* CSS snippets from medium.com */
+
+/* TODO: re-factoring and minify */
+
+/* defualt layout */
+
+body {
+  height: 100%;
+  overflow: hidden;
+  padding:0;
+  margin:0;
+  text-rendering: optimizeLegibility;
+  font-family: "freight-sans-pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  font-weight: 400;
+  color: #333332;
+  font-size: 18px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.gravatar {
+  width: 50px;
+  height: 50px;
+  background-color: #f2f2f0;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+}
+
+.cover {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  max-width: 500px;
+}
+
+#content {
+  position: absolute;
+  overflow: auto;
+  outline: 0;
+  left: 30%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  max-width: 910px;
+  padding: 50px 85px;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+}
+
+.cover-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url('http://yeoman.io/assets/img/yeoman-logo.png');
+  background-repeat: no-repeat;
+  background-position:center 10%;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  -webkit-box-shadow: inset -1px 0 0 rgba(0,0,0,0.3);
+     -moz-box-shadow: inset -1px 0 0 rgba(0,0,0,0.3);
+          box-shadow: inset -1px 0 0 rgba(0,0,0,0.3);
+}
+
+.title {
+  font-size: 32px;
+  line-height: 1.2;
+  padding-bottom: 5px;
+  display: block;
+  font-weight: 700;
+  color: #333332;
+  text-decoration:none;
+  cursor: auto;
+  margin:0;
+}
+
+.author {
+  float:right;
+}
+
+.date {
+  color: #b3b3b1;
+  font-size: 16px;
+}
+
+.article {
+  display: block;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #f2f2f0;
+  word-wrap: break-word;
+  -webkit-transition: opacity .5s linear;
+     -moz-transition: opacity .5s linear;
+      -ms-transition: opacity .5s linear;
+       -o-transition: opacity .5s linear;
+          transition: opacity .5s linear;
+}
+
+@media (min-width: 1666px) {
+  #content {
+      left: 500px;
+      padding-left: 185px;
+      max-width: 910px;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  body {
+      overflow:auto;
+  }
+
+  .cover {
+      position: relative!important;
+      width: 100%;
+      max-width: none;
+      height: 576px;
+  }
+
+  .cover-img {
+      -webkit-background-size: contain;
+         -moz-background-size: contain;
+           -o-background-size: contain;
+              background-size: contain;
+  }
+
+  #content {
+      left: 0;
+      position: relative;
+      padding: 40px 10%;
+      max-width: 100%;
+  }
+}
+
+/* layout-fullpost */
+
+.layout-fullpost .title {
+  font-size: 64px;
+  line-height: 1.2;
+  padding-bottom: 5px;
+  display: block;
+  font-weight: 700;
+  color: #333332;
+  text-decoration:none;
+  cursor: auto;
+  margin:0;
+}
+
+.layout-fullpost #content {
+  position: relative;
+  left:500px;
+  padding: 40px 5%;
+}
+
+#footer {
+  position: relative;
+  padding: 40px 5%;
+  left:500px;
+}
+
+.layout-fullpost .post-author-card {
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 5px 250px 0;
+  padding-top: 70px;
+  right:0;
+}
+
+.layout-fullpost .author {
+  float:none;
+  margin-bottom:20px;
+}
+
+.layout-fullpost #sidebar {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  max-width: 500px;
+  text-align: right;
+  padding: 40px 5%;
+}
+
+.layout-fullpost #menu {
+  z-index:200;
+  position: absolute;
+  left:10px;
+  top:10px;
+}
+
+.layout-fullpost .bio {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #b3b3b1;
+  word-wrap: break-word;
+}
+
+.layout-fullpost .post-author-card {
+  width: 180px;
+}
+
+@media (max-width: 1000px) {
+  .layout-fullpost #content {
+    position: relative;
+    left:0px;
+  }
+
+  #footer {
+    left:0px;
+  }
+
+  .layout-fullpost #sidebar {
+    position: relative!important;
+    max-width: 100%;
+    height: 80px;
+    padding: 16px 5%;
+    width:auto;
+  }
+
+  .layout-fullpost .post-author-card {
+    position: relative!important;
+    width:100%;
+    padding:0px;
+  }
+
+  .layout-fullpost .author {
+    float:left;
+  }
+
+  .layout-fullpost .author .gravatar {
+    float:left;
+    position: relative;
+  }
+
+  .layout-fullpost .post-author-info {
+    margin-left: 105px;
+    margin-right: 200px;
+    padding-right: 25px;
+    text-align:left;
+  }
+
+  .layout-fullpost .post-info {
+    width: 300px;
+    padding-left: 25px;
+    position: absolute;
+    right: 0;
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "layout": "fullpost",
+  "partial": "fullpost",
+  "partials": {
+    "sidebar": ["author"]
+  }
+}
